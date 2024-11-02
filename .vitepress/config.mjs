@@ -16,16 +16,20 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: '示例', link: '/markdown-examples' }
+      { text: '关于我', link: '/about' }
     ],
 
     sidebar: [
+      // {
+      //   text: '示例',
+      //   items: [
+      //     { text: 'Markdown示例', link: '/markdown-examples' },
+      //     { text: 'Runtime API示例', link: '/api-examples' }
+      //   ]
+      // }
       {
-        text: '示例',
-        items: [
-          { text: 'Markdown示例', link: '/markdown-examples' },
-          { text: 'Runtime API示例', link: '/api-examples' }
-        ]
+        text: '关于我',
+        link: '/about'
       }
     ],
 

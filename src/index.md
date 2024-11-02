@@ -8,18 +8,18 @@ hero:
   tagline: 好记性不如烂笔头
   actions:
     - theme: brand
-      text: 第一个示例
-      link: /markdown-examples
-    - theme: alt
-      text: 第二个示例
-      link: /api-examples
+      text: 关于我
+      link: /about
+    # - theme: alt
+    #   text: 第二个示例
+    #   link: /api-examples
 
 features:
-  - title: 特性一
-    details: 特性一的详细描述
-  - title: 特性二
-    details: 特性二的详细描述
-  - title: 特性三
-    details: 特性三的详细描述
+  - title: VuePress
+    details: 本站基于VuePress搭建
+  - title: 学习记录
+    details: 计算机、物理、数学...
+  - title: To be continue...
+    details: 希望接收到一些完善建议
 ---
 
