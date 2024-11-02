@@ -16,22 +16,31 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: '关于我', link: '/about' }
+      { text: '关于我', link: '/about/' },
+      { text: 'Blog', link: '/blog/' }
     ],
 
-    sidebar: [
-      // {
-      //   text: '示例',
-      //   items: [
-      //     { text: 'Markdown示例', link: '/markdown-examples' },
-      //     { text: 'Runtime API示例', link: '/api-examples' }
-      //   ]
-      // }
-      {
-        text: '关于我',
-        link: '/about'
-      }
-    ],
+    sidebar: {
+      '/about/': [
+        {
+          text: '关于我'
+        }
+      ],
+
+      '/blog/': [
+        {
+          text: 'Blog',
+          items: [ 
+            {
+              text: '项目管理',
+              items: [
+                { text: 'git教程', link: '/blog/git.md' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Calm00' }
