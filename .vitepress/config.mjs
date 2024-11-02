@@ -17,7 +17,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '关于我', link: '/about/' },
-      { text: 'Blog', link: '/blog/' }
+      { text: 'Blog', link: '/blog/' },
+      { text: '友链', link: '/friends/' }
     ],
 
     sidebar: {
@@ -38,6 +39,12 @@ export default defineConfig({
               ]
             }
           ]
+        }
+      ],
+
+      '/friends/': [
+        {
+          text: '友链'
         }
       ]
     },
