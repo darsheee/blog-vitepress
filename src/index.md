@@ -10,9 +10,9 @@ hero:
     - theme: brand
       text: 关于我
       link: /about
-    # - theme: alt
-    #   text: 第二个示例
-    #   link: /api-examples
+    - theme: alt
+      text: Blog
+      link: /blog
 
 features:
   - title: VuePress
