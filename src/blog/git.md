@@ -18,7 +18,7 @@ git --version
 全局更改镜像网站下载可大大方便后续操作
 
 ````bash
-git config --global url."https://ghproxy.cc/https://github.com/" .insteadOf "https://github.com/"
+git config --global url."https://ghproxy.cc/https://github.com/".insteadOf "https://github.com/"
 ````
 
 使用全局参数更改后 使用 `vi ~/.gitconfig` 命令即可查看当前的配置文件，看到以下配置：
