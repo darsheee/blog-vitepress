@@ -65,4 +65,6 @@ import { friends } from '../../.vitepress/theme/friends.js'
 
 ## 友链申请
 
-点击左侧导航栏的友链申请查看
+你需要先在你的网站添加本站友链，再向本站发送申请。
+
+具体请见左侧导航栏[友链申请](./apply.md)页

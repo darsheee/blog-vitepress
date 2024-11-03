@@ -46,10 +46,11 @@ export default defineConfig({
       '/friends/': [
         {
           text: '友链',
-          link: '/friends/',
-          items: [
-            { text: '友链申请', link: '/friends/apply.md' }
-          ]
+          link: '/friends/'
+        }, 
+        {
+          text: '友链申请',
+          link: '/friends/apply.md'
         }
       ]
     },

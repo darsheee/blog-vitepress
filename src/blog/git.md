@@ -13,6 +13,8 @@ git --version
 
 ## git换源（可选）
 
+请注意，示例提供的方法无法使用`git push`,只建议在云服务器上使用
+
 国内使用git时常发生抽风的现象
 
 全局更改镜像网站下载可大大方便后续操作
@@ -50,7 +52,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 eval "$(ssh-agent -s)"
 ````
 
-理论上这不是必须的
+**理论上这不是必须的**
 
 ### 添加SSH密钥到SSH代理
 
@@ -207,3 +209,16 @@ git push -f origin main
 执行逻辑是：创建一个临时分支->添加所有文件到这个分支->删除`main`分支->更改临时分支为`main`->强制推送到远程仓库
 
 注意：有些仓库有 main 分支保护，不允许强制 push，需要在远程仓库项目里暂时把项目保护关掉才能推送。
+
+### 在云服务器上拉取GitHub仓库
+
+````bash
+git clone https://github.com/用户名/仓库名.git
+````
+![链接来源](https://image.honahec.cc/git-clone.png){width=50%}
+
+### 从远程仓库更新本地仓库
+
+````bash
+git pull        
+````
