@@ -65,4 +65,4 @@ import { friends } from '../../.vitepress/theme/friends.js'
 
 ## 友链申请
 
-> TODO
+点击左侧导航栏的友链申请查看

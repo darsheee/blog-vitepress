@@ -5,14 +5,14 @@ export default defineConfig({
   title: "云朵角落",
   description: "Honahec's Blog",
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }]
+    ["link", { rel: "icon", href: "https://image.honahec.cc/avatar-circle.png" }]
   ],
   outDir: "dist",
   srcDir: "src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    logo: "/logo.png",
+    logo: "https://image.honahec.cc/avatar-circle.png",
 
     nav: [
       { text: 'Home', link: '/' },
@@ -31,6 +31,7 @@ export default defineConfig({
       '/blog/': [
         {
           text: 'Blog',
+          link: '/blog/',
           items: [ 
             {
               text: '项目管理',
@@ -44,7 +45,11 @@ export default defineConfig({
 
       '/friends/': [
         {
-          text: '友链'
+          text: '友链',
+          link: '/friends/',
+          items: [
+            { text: '友链申请', link: '/friends/apply.md' }
+          ]
         }
       ]
     },
