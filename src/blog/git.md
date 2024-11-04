@@ -169,7 +169,7 @@ git remote add origin https://github.com/你的用户名/仓库名.git
 git push -u origin main
 ````
 
-如果使用的是 `main` 分支，命令为 `git push -u origin main`
+如果使用的是 `master` 分支，命令为 `git push -u origin master`
 
 完成后，你的文件就会出现在 GitHub 的仓库中。
 
@@ -217,7 +217,7 @@ git push -f origin main
 ````bash
 git clone https://github.com/用户名/仓库名.git
 ````
-![链接来源](https://image.honahec.cc/git-clone.png){width=50%}
+![链接来源](https://image.honahec.cc/git-clone.png)
 
 ### 从远程仓库更新本地仓库
 

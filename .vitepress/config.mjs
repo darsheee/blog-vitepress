@@ -36,7 +36,14 @@ export default defineConfig({
             {
               text: '项目管理',
               items: [
-                { text: 'git教程', link: '/blog/git.md' }
+                { text: 'git', link: '/blog/git.md' }
+              ]
+            }, 
+            {
+              text: '前端',
+              items: [
+                { text: 'Nginx', link: '/blog/nginx.md' },
+                { text: 'SSL证书', link: '/blog/ssl.md' }
               ]
             }
           ]
@@ -113,7 +120,7 @@ export default defineConfig({
 
     langMenuLabel: "选择语言",
     returnToTopLabel: "返回顶部",
-    sidebarMenuLabel: "目录",
+    sidebarMenuLabel: "导航栏",
     darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "浅色模式",
     darkModeSwitchTitle: "深色模式"
