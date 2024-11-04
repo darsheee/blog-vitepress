@@ -89,7 +89,7 @@ server {
 }
 ```
 
-## 链接软链接
+## 启用配置文件
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/site.yourdomain.com /etc/nginx/sites-enabled/site.yourdomain.com
@@ -99,11 +99,15 @@ sudo ln -s /etc/nginx/sites-available/site.yourdomain.com /etc/nginx/sites-enabl
 
 ## 测试配置
 
+其实我一般不测试，报错就说明有问题（
+
 ```bash
 sudo nginx -t
 ```
 
 如果显示`syntax is ok`，则表示配置无误
+
+如果报错了，可以使用`sudo systemctl status nginx`查看错误信息
 
 ## 重启Nginx
 

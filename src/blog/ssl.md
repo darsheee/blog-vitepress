@@ -14,7 +14,7 @@ sudo certbot --nginx -d yourdomain.com -d *.yourdomain.com
 
 随后它会提示你输入邮箱并添加dns验证，验证成功后即可生成证书，按照提示操作即可
 
-这意味着你将获取适用于`yourdomain.com`和`*.yourdomain.com`的ssl证书
+这意味着你将获取适用于`yourdomain.com`和`*.yourdomain.com`的ssl证书（由Let's Encrypt提供）
 
 其中`*.yourdomain.com`表示所有**二级子域名**，例如`blog.yourdomain.com`、`abc.yourdomain.com`等
 
@@ -34,4 +34,4 @@ Let’s Encrypt 的证书有效期为 90 天。Certbot 会自动安装一个定�
 sudo certbot renew --dry-run
 ```
 
-**随后去nginx配置文件中添加证书即可，请查看[nginx教程](./nginx.md)**
+> 随后去nginx配置文件中添加证书即可，请查看[nginx教程](./nginx.md)
