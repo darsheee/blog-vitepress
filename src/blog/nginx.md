@@ -1,15 +1,15 @@
-# Nginx教程
+# Nginx 教程
 
-## 安装Nginx
+## 安装 Nginx
 
 ```bash
 sudo apt update
 sudo apt install nginx
 ```
 
-## 配置Nginx
+## 配置 Nginx
 
-Nginx的配置文件一般位于`/etc/nginx/`
+Nginx 的配置文件一般位于`/etc/nginx/`
 
 其中`nginx.conf`是主配置文件（不管它）
 
@@ -23,15 +23,15 @@ sudo vi /etc/nginx/sites-available/site.yourdomain.com
 
 以下给出两个`sites-available`的示例：
 
-### 直接转发某个前端项目（以vue为例）
+### 直接转发某个前端项目（以 vue 为例）
 
-> vue项目打包后会生成一个`dist`文件夹，里面包含打包后的文件
+> vue 项目打包后会生成一个`dist`文件夹，里面包含打包后的文件
 >
-> 详细请查看vue教程（还没写呢）
+> 详细请查看 vue 教程（还没写呢）
 
-所以我们只需要配置nginx将`root`指向`dist`文件夹，然后`index`指向`index.html`即可
+所以我们只需要配置 nginx 将`root`指向`dist`文件夹，然后`index`指向`index.html`即可
 
-> 有关ssl证书(https)的配置请查看[ssl证书教程](./ssl.md)
+> 有关 ssl 证书(https)的配置请查看[ssl 证书教程](./ssl.md)
 
 ```nginx
 server {
@@ -58,9 +58,9 @@ server {
 }
 ```
 
-### 转发某个端口到80
+### 转发某个端口到 80
 
-例如你有一个项目跑在3000端口，你可以通过配置nginx将3000端口转发到80端口
+例如你有一个项目跑在 3000 端口，你可以通过配置 nginx 将 3000 端口转发到 80 端口
 
 ```nginx
 server {
@@ -71,7 +71,7 @@ server {
 
 server {
     listen 443 ssl; // 监听443端口
-    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个） 
+    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个）
 
     ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem; // 证书（查看ssl证书教程配置）
     ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem; // 证书密钥
@@ -95,7 +95,7 @@ server {
 sudo ln -s /etc/nginx/sites-available/site.yourdomain.com /etc/nginx/sites-enabled/site.yourdomain.com
 ```
 
-这意味着nginx会启用`site.yourdomain.com`这个配置文件
+这意味着 nginx 会启用`site.yourdomain.com`这个配置文件
 
 ## 测试配置
 
@@ -109,7 +109,7 @@ sudo nginx -t
 
 如果报错了，可以使用`sudo systemctl status nginx`查看错误信息
 
-## 重启Nginx
+## 重启 Nginx
 
 ```bash
 sudo systemctl restart nginx

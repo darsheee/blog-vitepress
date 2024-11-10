@@ -1,11 +1,14 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "云朵角落",
   description: "Honahec's Blog",
   head: [
-    ["link", { rel: "icon", href: "https://image.honahec.cc/favicon-blue.png" }]
+    [
+      "link",
+      { rel: "icon", href: "https://image.honahec.cc/favicon-blue.png" },
+    ],
   ],
   outDir: "dist",
   srcDir: "src",
@@ -15,72 +18,64 @@ export default defineConfig({
     logo: "https://image.honahec.cc/avatar-circle.png",
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '关于我', link: '/about/' },
-      { text: 'Blog', link: '/blog/' },
-      { text: '友链', link: '/friends/' }
+      { text: "Home", link: "/" },
+      { text: "关于我", link: "/about/" },
+      { text: "Blog", link: "/blog/" },
+      { text: "友链", link: "/friends/" },
     ],
 
     sidebar: {
-      '/about/': [
+      "/about/": [
         {
-          text: '关于我'
-        }
+          text: "关于我",
+        },
       ],
 
-      '/blog/': [
+      "/blog/": [
         {
-          text: 'Blog',
-          link: '/blog/',
-          items: [ 
+          text: "Blog",
+          link: "/blog/",
+          items: [
             {
-              text: '项目管理',
-              items: [
-                { text: 'git', link: '/blog/git.md' }
-              ]
-            }, 
+              text: "项目管理",
+              items: [{ text: "git", link: "/blog/git.md" }],
+            },
             {
-              text: '前端',
+              text: "前端",
               items: [
-                { text: 'Nginx', link: '/blog/nginx.md' },
-                { text: 'SSL证书', link: '/blog/ssl.md' }
-              ]
-            }
-          ]
-        }
+                { text: "Nginx", link: "/blog/nginx.md" },
+                { text: "SSL证书", link: "/blog/ssl.md" },
+              ],
+            },
+          ],
+        },
       ],
 
-      '/friends/': [
+      "/friends/": [
         {
-          text: '友链',
-          link: '/friends/'
-        }, 
+          text: "友链",
+          link: "/friends/",
+        },
         {
-          text: '友链申请',
-          link: '/friends/apply.md'
-        }
-      ]
+          text: "友链申请",
+          link: "/friends/apply.md",
+        },
+      ],
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Calm00' }
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/Calm00" }],
 
     search: {
-      provider: 'local',
+      provider: "local",
       options: {
         miniSearch: {
-          options: {
-            
-          },
-          searchOptions: {
-           
-          }
+          options: {},
+          searchOptions: {},
         },
         translations: {
           button: {
-            buttonText: '搜索',
-            buttonAriaLabel: '搜索'
+            buttonText: "搜索",
+            buttonAriaLabel: "搜索",
           },
           modal: {
             noResultsText: "无法找到相关结果",
@@ -88,34 +83,34 @@ export default defineConfig({
             footer: {
               selectText: "选择",
               navigateText: "切换",
-              closeText: "关闭"
-            }
-          }
-        }
-      }
+              closeText: "关闭",
+            },
+          },
+        },
+      },
     },
 
     footer: {
       message: `<a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2024119517号-1</a>`,
-      copyright: `Copyright © 2024 Honahec`     
+      copyright: `Copyright © 2024 Honahec`,
     },
 
     docFooter: {
       prev: "上一页",
-      next: "下一页"
+      next: "下一页",
     },
 
     outline: {
       level: [2, 6],
-      label: "文章目录"
+      label: "文章目录",
     },
 
     lastUpdated: {
       text: "最后更新于",
       formatOptions: {
         dateStyle: "short",
-        timeStyle: "short"
-      }
+        timeStyle: "short",
+      },
     },
 
     langMenuLabel: "选择语言",
@@ -123,6 +118,6 @@ export default defineConfig({
     sidebarMenuLabel: "导航栏",
     darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "浅色模式",
-    darkModeSwitchTitle: "深色模式"
-  }
-})
+    darkModeSwitchTitle: "深色模式",
+  },
+});
