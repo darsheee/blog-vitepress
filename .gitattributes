@@ -1,0 +1,2 @@
+*.md linguist-detectable=true
+src/** linguist-documentation=false
