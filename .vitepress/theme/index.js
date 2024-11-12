@@ -1,12 +1,15 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
-import "./style.css";
 import GiscusComment from "./components/GiscusComment.vue";
 import "viewerjs/dist/viewer.css";
 import Viewer from "viewerjs";
 import { onMounted, watch, nextTick } from "vue";
 import { useRoute } from "vitepress";
+import { Icon } from "@iconify/vue";
+
+import "./theme-enhanced.css";
+import "./style.css";
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -62,15 +65,10 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      "doc-after": () => h(GiscusComment),
     });
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
-  },
-
-  Layout() {
-    return h(DefaultTheme.Layout, null, {
-      "doc-after": () => h(GiscusComment),
-    });
+    app.component("Icon", Icon);  
   },
 };

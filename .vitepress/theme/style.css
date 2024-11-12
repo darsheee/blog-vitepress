@@ -136,3 +136,31 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
+
+.fa-solid, .fa-regular, .fa-brands {
+  width: 1.2em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+:where(.iconify) {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.VPFeature {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.VPFeature .icon {
+  position: absolute;
+  opacity: 0.15;
+  right: 10%;
+  background-color: transparent;
+  font-size: 8em;
+  z-index: -1;
+}

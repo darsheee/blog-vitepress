@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: "zh-CN",
   title: "云朵角落",
   description: "Honahec's Blog",
   head: [
@@ -22,6 +23,7 @@ export default defineConfig({
       { text: "关于我", link: "/about/" },
       { text: "Blog", link: "/blog/" },
       { text: "友链", link: "/friends/" },
+      { text: "TODO", link: "/todo/" },
     ],
 
     sidebar: {
@@ -59,6 +61,13 @@ export default defineConfig({
         {
           text: "友链申请",
           link: "/friends/apply.md",
+        },
+      ],
+
+      "/todo/": [
+        {
+          text: "TODO",
+          link: "/todo/",
         },
       ],
     },
