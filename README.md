@@ -7,8 +7,14 @@ blog
 ├── .vitepress
 │   ├── config.mjs
 │   └── theme
-│       ├── index.css
-│       └── layout.vue
+│       ├── style.css
+│       ├── index.js
+│       └── ...
+├── src
+│   ├── about
+│   ├── friends
+│   ├── todo
+│   └── ...
 ```
 
 ## 使用说明
