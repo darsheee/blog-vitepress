@@ -30,7 +30,7 @@ onMounted(async () => {
 <style scoped>
 .tagline-container {
   margin-top: 10px;
-  height: 120px;
+  min-height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,30 +38,32 @@ onMounted(async () => {
 }
 
 .tagline-wrapper {
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .author-wrapper {
-  height: 40px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 430px; 
+  padding-left: 40%;
+  padding-right: 1rem;
 }
 
 .tagline {
+  width: 100%;
   max-width: 600px;
-  font-size: 22px;
+  font-size: clamp(16px, 4vw, 22px);
   font-weight: 500;
   color: var(--vp-c-text-2);
   line-height: 1.5;
 }
 
 .author {
-  max-width: 400px;
-  font-size: 20px;
+  font-size: clamp(14px, 3.5vw, 20px);
   font-weight: 500;
   color: var(--vp-c-text-2);
 }
