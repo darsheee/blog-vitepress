@@ -10,16 +10,15 @@
 
 ## 已完成
 
-<div style="display: inline-flex; align-items: center;"><Icon icon="proicons:checkmark-circle" style="color: var(--vp-c-brand-1)" /> 网站部署</div><br/>
-
-<div style="display: inline-flex; align-items: center;"><Icon icon="proicons:checkmark-circle" style="color: var(--vp-c-brand-1)" /> Giscus 评论</div><br/>
-
-<div style="display: inline-flex; align-items: center;"><Icon icon="proicons:checkmark-circle" style="color: var(--vp-c-brand-1)" /> 友链</div><br/>
-
-<div style="display: inline-flex; align-items: center;"><Icon icon="proicons:checkmark-circle" style="color: var(--vp-c-brand-1)" /> 文章精选</div>
+<FinishedTodo>网站部署</FinishedTodo>
+<FinishedTodo>Giscus 评论</FinishedTodo>
+<FinishedTodo>友链</FinishedTodo>
+<FinishedTodo>文章精选</FinishedTodo>
+<FinishedTodo>一言</FinishedTodo>
 
 ## 进行中
 
+- 更新时间
 - 基于 Django rest framework 的 api 教程
 - pnpm 教程
 - 使用 vitepress 搭建 blog

@@ -1,7 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
-import GiscusComment from "./components/GiscusComment.vue";
 import "viewerjs/dist/viewer.css";
 import Viewer from "viewerjs";
 import { onMounted, watch, nextTick } from "vue";
@@ -11,10 +10,16 @@ import { Icon } from "@iconify/vue";
 import "./theme-enhanced.css";
 import "./style.css";
 
+import GiscusComment from "./components/GiscusComment.vue";
+import RandomTagline from "./components/RandomTagline.vue";
+import FeaturedPosts from "./components/FeaturedPosts.vue";
+import TodoItem from "./components/FinishedTodo.vue";
+
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
 
+  // 图片放大
   setup() {
     const route = useRoute();
     let viewer = null; // 保存viewer实例
@@ -65,10 +70,13 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      "home-hero-info-after": () => h(RandomTagline),
       "doc-after": () => h(GiscusComment),
+      "home-features-after": () => h(FeaturedPosts),
     });
   },
   enhanceApp({ app, router, siteData }) {
-    app.component("Icon", Icon);  
+    app.component("Icon", Icon);
+    app.component("FinishedTodo", TodoItem);
   },
 };

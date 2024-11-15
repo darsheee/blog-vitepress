@@ -3,7 +3,7 @@
 ## 朋友们
 
 <script setup>
-import { friends } from '../../.vitepress/theme/friends.js'
+import { friends } from '../../.vitepress/theme/data/friends.js'
 </script>
 
 <div class="friends-wrapper">
