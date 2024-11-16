@@ -30,8 +30,8 @@ pnpm 的兼容性不如 npm，但是不影响 pnpm 的优越性
 
 ```bash
 wget https://github.com/nvm-sh/nvm/archive/refs/tags/v0.39.1.tar.gz
-mkdir -p /.nvm
-tar -zxvf nvm-0.39.1.tar.gz -C /.nvm
+mkdir -p ~/.nvm
+tar -zxvf nvm-0.39.1.tar.gz -C ~/.nvm
 ```
 
 ### 配置 nvm
