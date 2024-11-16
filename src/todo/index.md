@@ -20,6 +20,5 @@
 
 - 更新时间
 - 基于 Django rest framework 的 api 教程
-- pnpm 教程
 - 使用 vitepress 搭建 blog
 - Vue 3 系列教程

@@ -40,7 +40,10 @@ export default defineConfig({
           items: [
             {
               text: "项目管理",
-              items: [{ text: "git", link: "/blog/git.md" }],
+              items: [
+                { text: "git", link: "/blog/git.md" },
+                { text: "pnpm", link: "/blog/pnpm.md" },
+              ],
             },
             {
               text: "前端",
@@ -72,7 +75,7 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/Calm00" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/Calm00/blog" }],
 
     search: {
       provider: "local",
