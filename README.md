@@ -75,24 +75,24 @@ pnpm docs:build
 
 ## 主要功能
 
-1. 文章系统
+### 文章系统
 
 - 支持 Markdown 写作
 - 自动生成目录
 - 代码高亮
 - 图片预览
 
-2. 评论系统
+### 评论系统
 
 - 基于 Giscus 的评论功能
 - GitHub Discussions 数据同步
 
-3. 友链系统
+### 友链系统
 
 - 友链展示
 - 友链申请
 
-4. 其他功能
+### 其他功能
 
 - 本地搜索
 - 一言 API 集成
@@ -101,14 +101,21 @@ pnpm docs:build
 
 ## 自定义配置
 
-1. 导航栏配置
-   编辑 `.vitepress/config/nav.js`
-2. 侧边栏配置
-   编辑 `.vitepress/config/sidebar.js`
-3. 搜索配置
-   编辑 `.vitepress/config/search.js`
-4. 主题配置
-   编辑 `.vitepress/theme/style.css`
+### 导航栏配置
+
+编辑 `.vitepress/config/nav.js`
+
+### 侧边栏配置
+
+编辑 `.vitepress/config/sidebar.js`
+
+### 搜索配置
+
+编辑 `.vitepress/config/search.js`
+
+### 主题配置
+
+编辑 `.vitepress/theme/style.css`
 
 ## 贡献
 
