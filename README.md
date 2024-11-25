@@ -15,6 +15,7 @@
 
 ## 项目结构
 
+```
 blog
 ├── .vitepress
 │ ├── config.mjs # 主配置文件
@@ -33,6 +34,7 @@ blog
 │ ├── friends # 友链页面
 │ └── todo # TODO 页面
 └── public # 静态资源
+```
 
 ## 开发环境要求
 
