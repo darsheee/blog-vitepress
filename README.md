@@ -46,7 +46,7 @@ blog
 1.克隆仓库
 
 ```bash
-git clone https://github.com/yourusername/blog.git
+git clone https://github.com/Honahec/blog.git
 cd blog
 ```
 
@@ -69,8 +69,11 @@ pnpm docs:build
 ```
 
 5.部署
+
 构建后的文件在 dist 目录
+
 可以配置 Nginx 将网站根目录指向 dist 文件夹
+
 具体配置可参考 [Nginx 配置](https://blog.honahec.cc/blog/nginx.html)
 
 ## 主要功能
