@@ -239,7 +239,7 @@ DRF 提供了内置的 API 文档界面，访问 `/yiyan/` 即可查看。
 
 ## 测试 API
 
-### 使用 curl 测试 API：
+### 使用 curl 测试 API
 
 ```bash
 # 获取句子列表
