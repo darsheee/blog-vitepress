@@ -15,10 +15,12 @@
 <FinishedTodo>友链</FinishedTodo>
 <FinishedTodo>文章精选</FinishedTodo>
 <FinishedTodo>一言</FinishedTodo>
+<FinishedTodo>图片放大</FinishedTodo>
+<FinishedTodo>模块化代码</FinishedTodo>
 
 ## 进行中
 
 - 更新时间
-- 基于 Django rest framework 的 api 教程
 - 使用 vitepress 搭建 blog
 - Vue 3 系列教程
+- 使用 Django+React 搭建简单 TODO 项目

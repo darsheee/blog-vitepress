@@ -4,7 +4,7 @@
 >
 > 这是我的前端入门项目，想通过一步步完善个人博客的方式学习前端
 
-现在是 **2024-11-3** 的凌晨，我刚刚将[该 blog 项目](https://github.com/Calm00/blog)的 beta1 版本上传到 github，并在阿里云服务器上部署完成，写下了这个 about.md
+现在是 **2024-11-3** 的凌晨，我刚刚将[该 blog 项目](https://github.com/Honahec/blog)的 beta1 版本上传到 github，并在阿里云服务器上部署完成，写下了这个 about.md
 
 不过本人目前高三，没有太多时间去学习前端，更新项目，但我想我会坚持下去的吧
 
@@ -32,7 +32,7 @@ Honahec 这个名字是我将自己的真实姓名拼音打乱位置凑出来了
 
 ## 各个地方的我
 
-[GitHub](https://github.com/Calm00)
+[GitHub](https://github.com/Honahec)
 
 [Bilibili](https://space.bilibili.com/299797909)
 

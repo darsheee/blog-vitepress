@@ -2,7 +2,7 @@
   <div style="margin-top: 24px">
     <Giscus
       id="comments"
-      repo="Calm00/blog"
+      repo="Honahec/blog"
       repoid="R_kgDONJemfQ"
       category="General"
       categoryid="DIC_kwDONJemfc4Cj7pY"
