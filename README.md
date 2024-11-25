@@ -38,8 +38,8 @@ blog
 
 ## 开发环境要求
 
-Node.js >= 16
-pnpm >= 8
+- Node.js >= 16
+- pnpm >= 8
 
 ## 使用说明
 
