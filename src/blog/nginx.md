@@ -35,28 +35,30 @@ sudo vi /etc/nginx/sites-available/site.yourdomain.com
 
 ```nginx
 server {
-    listen 80; // 监听80端口（http）
-    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个）
-    return 301 https://$host$request_uri; // 301重定向到https
+    listen 80;
+    server_name site.yourdomain.com www.site.yourdomain.com;
+    return 301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl; // 监听443端口（https）
-    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个）
+    server_name site.yourdomain.com www.site.yourdomain.com;
 
-    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem; // 证书（查看ssl证书教程配置）
-    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem; // 证书密钥
-    ssl_protocols TLSv1.2 TLSv1.3; // 支持的SSL协议（无需修改）
-    ssl_ciphers HIGH:!aNULL:!MD5; // 加密套件（无需修改）
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
 
-    root /path/to/your/dist; // 根目录（文件夹路径）
-    index index.html; // 默认文件
+    root /path/to/your/dist;
+    index index.html;
 
     location / {
-    	try_files $uri $uri/ /index.html; // 尝试文件
+    	try_files $uri $uri/ /index.html;
     }
 }
 ```
+
+只需要修改 `root` 、 `index` 和 `server_name` 即可
 
 ### 转发某个端口到 80
 
@@ -64,30 +66,32 @@ server {
 
 ```nginx
 server {
-    listen 80; // 监听80端口
-    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个）
-    return 301 https://$host$request_uri; // 301重定向到https
+    listen 80;
+    server_name site.yourdomain.com www.site.yourdomain.com;
+    return 301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl; // 监听443端口
-    server_name site.yourdomain.com www.site.yourdomain.com; // 服务器名（即你想使用的域名，可以多个）
+    server_name site.yourdomain.com www.site.yourdomain.com;
 
-    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem; // 证书（查看ssl证书教程配置）
-    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem; // 证书密钥
-    ssl_protocols TLSv1.2 TLSv1.3; // 支持的SSL协议（无需修改）
-    ssl_ciphers HIGH:!aNULL:!MD5; // 加密套件（无需修改）
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
 
     location / {
-        proxy_pass http://127.0.0.1:3000; // 代理地址
-        proxy_http_version 1.1; // 代理版本（无需修改）
-        proxy_set_header Upgrade $http_upgrade; // 设置头（无需修改）
-        proxy_set_header Connection 'upgrade'; // 设置头（无需修改）
-        proxy_set_header Host $host; // 设置头（无需修改）
-        proxy_cache_bypass $http_upgrade; // 缓存绕过（无需修改）
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
 }
 ```
+
+只需要修改 `proxy_pass` 和 `server_name` 即可
 
 ## 启用配置文件
 

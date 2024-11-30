@@ -42,6 +42,14 @@ INSTALLED_APPS = [
 ]
 ```
 
+添加 `ALLOWED_HOSTS`：
+
+```python
+ALLOWED_HOSTS = [
+    'yourdomain.com',
+]
+```
+
 ## CORS 配置
 
 安装 CORS 中间件：
