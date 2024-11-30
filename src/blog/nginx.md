@@ -41,7 +41,7 @@ server {
 }
 
 server {
-    listen 443 ssl; // 监听443端口（https）
+    listen 443 ssl;
     server_name site.yourdomain.com www.site.yourdomain.com;
 
     ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
