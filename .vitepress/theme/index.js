@@ -51,10 +51,10 @@ export default {
 
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      "home-hero-info-after": () => h(RandomTagline),
-      "doc-after": () => h(GiscusComment),
-      "home-features-after": () => h(FeaturedPosts),
+      // // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      // "home-hero-info-after": () => h(RandomTagline),
+      // "doc-after": () => h(GiscusComment),
+      // "home-features-after": () => h(FeaturedPosts),
     });
   },
   enhanceApp({ app }) {
